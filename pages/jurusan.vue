@@ -4,50 +4,79 @@
 
     <!-- Daftar Jurusan -->
     <section class="row">
-      <!-- Jurusan 1: IPA -->
+      <!-- Jurusan 1: PPLG -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/assets/img/RPL.jpeg" alt="Basketball" class="card-img-top" style="height: 200px; object-fit: cover" />
+          <img src="/assets/img/RPL.jpeg" alt="PPLG" class="card-img-top" style="height: 200px; object-fit: cover" />
           <div class="card-body">
             <h5 class="card-title">JURUSAN PPLG</h5>
             <p class="card-text">
-              Jurusan PPLG atau Pengembangan Perangkat Lunak dan Gim adalah merupakan jurusan yang mempelajari tentang perkembangan perangkat lunak meliputi pembuatan, manajemen organisasi pengembangan perangkat lunak, pemeliharaan dan
-              manajemen kualitas. .
+              Jurusan PPLG atau Pengembangan Perangkat Lunak dan Gim adalah jurusan yang mempelajari tentang
+              perkembangan perangkat lunak meliputi pembuatan, manajemen organisasi pengembangan perangkat lunak,
+              pemeliharaan, dan manajemen kualitas.
             </p>
-            <a href="/jurusan/ipa" class="btn btn-primary">Lihat Detail</a>
           </div>
         </div>
       </div>
 
-      <!-- Jurusan 2: IPS -->
+      <!-- Jurusan 2: TJKT -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/assets/img/tkj.jpeg" alt="Basketball" class="card-img-top" style="height: 200px; object-fit: cover" />
+          <img src="/assets/img/tkj.jpeg" alt="TJKT" class="card-img-top" style="height: 200px; object-fit: cover" />
           <div class="card-body">
             <h5 class="card-title">JURUSAN TJKT</h5>
             <p class="card-text">
-              Teknik Jaringan Komputer dan Telekomunikasi (TJKT) merupakan program keahlian yang membekali peserta didik dengan keterampilan, pengetahuan, dan sikap agar kompeten dalam merakit, menginstall program, merawat dan memperbaiki
-              komputer serta jaringannya..
+              Teknik Jaringan Komputer dan Telekomunikasi (TJKT) merupakan program keahlian yang membekali peserta didik
+              dengan keterampilan, pengetahuan, dan sikap agar kompeten dalam merakit, menginstall program, merawat dan
+              memperbaiki komputer serta jaringannya.
             </p>
-            <a href="/jurusan/ips" class="btn btn-primary">Lihat Detail</a>
           </div>
         </div>
       </div>
 
-      <!-- Jurusan 3: Bahasa -->
+      <!-- Jurusan 3: TBSM -->
       <div class="col-md-4 mb-4">
         <div class="card">
-          <img src="/assets/img/tbsm.jpeg" alt="Basketball" class="card-img-top" style="height: 200px; object-fit: cover" />
+          <img src="/assets/img/tbsm.jpeg" alt="TBSM" class="card-img-top" style="height: 200px; object-fit: cover" />
           <div class="card-body">
             <h5 class="card-title">JURUSAN TBSM</h5>
             <p class="card-text">
-              Teknik Bisnis Sepeda Motor adalah kompetensi keahlian pada Bidang Studi Keahlian Teknologi dan Rekayasa Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan sepeda motor
-              roda dua..
+              Teknik Bisnis Sepeda Motor adalah kompetensi keahlian pada Bidang Studi Keahlian Teknologi dan Rekayasa
+              Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan
+              sepeda motor roda dua.
             </p>
-            <a href="/jurusan/bahasa" class="btn btn-primary">Lihat Detail</a>
           </div>
         </div>
       </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/assets/img/tbsm.jpeg" alt="TBSM" class="card-img-top" style="height: 200px; object-fit: cover" />
+          <div class="card-body">
+            <h5 class="card-title">JURUSAN TBSM</h5>
+            <p class="card-text">
+              Teknik Bisnis Sepeda Motor adalah kompetensi keahlian pada Bidang Studi Keahlian Teknologi dan Rekayasa
+              Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan
+              sepeda motor roda dua.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/assets/img/tbsm.jpeg" alt="TBSM" class="card-img-top" style="height: 200px; object-fit: cover" />
+          <div class="card-body">
+            <h5 class="card-title">JURUSAN TBSM</h5>
+            <p class="card-text">
+              Teknik Bisnis Sepeda Motor adalah kompetensi keahlian pada Bidang Studi Keahlian Teknologi dan Rekayasa
+              Program Studi Keahlian Teknik Otomotif yang menekankan pada keterampilan pelayanan jasa mekanik kendaraan
+              sepeda motor roda dua.
+            </p>
+          </div>
+        </div>
+      </div>
+
     </section>
   </div>
 </template>

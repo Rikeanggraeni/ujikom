@@ -1,116 +1,170 @@
 <template>
-  <div>
-    <!-- Header -->
-    <header class="header">
-      <h1>Galeri Web Sekolah</h1>
-      <p>Menampilkan dokumentasi kegiatan sekolah kami</p>
-    </header>
+  <div class="container-fluid">
+    <!-- Judul Halaman Galeri -->
+    <section class="gallery-header text-center py-5">
+      <h2>Galeri Sekolah</h2>
+      <p>Berikut adalah beberapa kegiatan dan acara yang telah berlangsung di SMK Negeri 4 Tasikmalaya.</p>
+    </section>
 
-    <!-- Main Gallery Section -->
-    <main>
-      <section class="gallery">
-        <div v-for="(image, index) in images" :key="index" class="gallery-item">
-          <a :href="image.src" target="_blank">
-            <img :src="image.src" :alt="image.alt" />
-          </a>
-          <p>{{ image.title }}</p>
+    <!-- Galeri Foto -->
+    <section class="gallery-section py-5">
+      <div class="gallery-row">
+        <!-- Gambar 1 -->
+        <div class="gallery-card">
+          <img src="assets/img/kepsek.png" alt="Gambar 1" class="img-fluid gallery-image" />
+          <div class="overlay">
+            <p class="overlay-text">Kunjungan Industri</p>
+          </div>
         </div>
-      </section>
-    </main>
 
-    <!-- Footer -->
-    <footer class="footer">
-      <p>&copy; 2024 Sekolah Kita. Semua Hak Dilindungi.</p>
-    </footer>
+        <!-- Gambar 2 -->
+        <div class="gallery-card">
+          <img src="assets/img/skul.jpg" alt="Gambar 2" class="img-fluid gallery-image" />
+          <div class="overlay">
+            <p class="overlay-text">Jobfair</p>
+          </div>
+        </div>
+
+        <!-- Gambar 3 -->
+        <div class="gallery-card">
+          <img src="assets/img/kepsek.png" alt="Gambar 3" class="img-fluid gallery-image" />
+          <div class="overlay">
+            <p class="overlay-text">Porseni</p>
+          </div>
+        </div>
+
+        <!-- Gambar 4 -->
+        <div class="gallery-card">
+          <img src="assets/img/kepsek.png" alt="Gambar 4" class="img-fluid gallery-image" />
+          <div class="overlay">
+            <p class="overlay-text">Pelatihan Teknologi di Lab</p>
+          </div>
+        </div>
+
+        <!-- Gambar 5 -->
+        <div class="gallery-card">
+          <img src="assets/img/kepsek.png" alt="Gambar 5" class="img-fluid gallery-image" />
+          <div class="overlay">
+            <p class="overlay-text">Pembukaan MPLS</p>
+          </div>
+        </div>
+
+        <!-- Gambar 6 -->
+        <div class="gallery-card">
+          <img src="assets/img/skul.jpg" alt="Gambar 6" class="img-fluid gallery-image" />
+          <div class="overlay">
+            <p class="overlay-text">Kemah</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-      images: [
-        {
-          src: "/img/kegiatan1.jpg",
-          title: "Upacara Bendera",
-          alt: "Upacara Bendera",
-        },
-        {
-          src: "/img/kegiatan2.jpg",
-          title: "Ekskul Tari Tradisional",
-          alt: "Ekskul Tari Tradisional",
-        },
-        {
-          src: "/img/kegiatan3.jpg",
-          title: "Lomba Sains",
-          alt: "Lomba Sains",
-        },
-        {
-          src: "/img/kegiatan4.jpg",
-          title: "Kegiatan Olahraga",
-          alt: "Kegiatan Olahraga",
-        },
-      ],
-    };
-  },
+  name: "GaleriSekolahPage",
 };
 </script>
 
-<style>
-/* Header Styles */
-.header {
-  text-align: center;
-  background: #0275d8;
+<style scoped>
+.gallery-header {
+  background-color: #007bff;
   color: white;
   padding: 20px 0;
+  border-bottom: 2px solid #0056b3;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 2.5rem;
+.gallery-header h2 {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.header p {
-  margin: 10px 0 0;
-  font-size: 1.2rem;
+.gallery-header p {
+  font-size: 15px;
+  margin-top: 10px;
 }
 
-/* Gallery Styles */
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
+.gallery-section {
+  background-color: #f7f7f7;
 }
 
-.gallery-item {
-  text-align: center;
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.gallery-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  width: 15%;
+  margin-bottom: 20px;
 }
 
-.gallery-item img:hover {
+.gallery-card:hover {
   transform: scale(1.05);
 }
 
-.gallery-item p {
-  margin-top: 10px;
-  font-size: 1rem;
-  color: #555;
+.gallery-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
 }
 
-/* Footer Styles */
-.footer {
-  text-align: center;
-  background: #333;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 10px 0;
-  margin-top: 20px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s ease-in-out;
+  text-align: center;
+}
+
+.overlay-text {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.gallery-card:hover .overlay {
+  opacity: 1;
+}
+
+h2 {
+  text-emphasis: center;
+}
+
+h3 {
+  color: #0056b3;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .gallery-card {
+    width: 30%;
+    /* Menyesuaikan ukuran gambar di layar kecil */
+  }
+
+  .gallery-image {
+    height: 120px;
+    /* Memperkecil gambar pada layar kecil */
+  }
+
+  .gallery-row {
+    justify-content: center;
+    /* Menyusun gambar dengan rapi pada layar kecil */
+  }
 }
 </style>
